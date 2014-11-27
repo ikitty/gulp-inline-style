@@ -1,0 +1,25 @@
+{
+    "name": "gulp-inline-style",
+    "version": "0.1.0",
+    "description": "replace link tags with inline style tags",
+    "main": "index.js",
+    "author": "Alex T",
+    "license": "BSD",
+    "dependencies": {
+        "cheerio": "latest"
+        ,"event-stream": "^3.1.7"
+        ,"iconv-lite": "latest"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test \" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ikitty/gulp-inline-style.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ikitty/gulp-inline-style/issues"
+    },
+    "homepage": "https://github.com/ikitty/gulp-inline-style"
+}
