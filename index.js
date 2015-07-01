@@ -19,14 +19,14 @@ module.exports = function(cssPath) {
         }
 
         var dom = cheerio.load(htmlUtf8, { decodeEntities: false });
-        injectStyles(dom);
+        injectStyles(dom, cssPath === undefined ? path.dirname(file.path) : cssPath);
         file.contents = iconv.encode(dom.html(), 'gbk');
         return callback(null, file);
     };
     return es.map(go);
-  
+
     //maybe need replace str
-    function injectStyles(dom) {
+    function injectStyles(dom, cssPath) {
         dom('link').each(function(idx, el) {
             el = dom(el)
             var href = el.attr('href')
